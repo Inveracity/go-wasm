@@ -2,11 +2,11 @@
 
 #### Prerequisites
 
-| dep    | version   | notes                   |
-|:-------|:----------|:------------------------|
-| Go     | >= 1.11.5 |                         |
-| Chrome | >= 72     |                         |
-| Python | >= 3.6    | used for test webserver |
+| dep    | version   | notes             |
+|:-------|:----------|:----------------- |
+| Go     | >= 1.11.5 |                   |
+| Chrome | >= 72     | Web Browser       |
+| Python | >= 3.6    | Used as webserver |
 
 #### build and run
 
@@ -18,7 +18,7 @@ GOOS=js GOARCH=wasm go build -o main.wasm
 
 2. run the webserver
 
-> any webserver will do as long as the _application/wasm_ mimetype is available)
+> any webserver will do as long as the _application/wasm_ mimetype is available
 
 ```bash
 $ python3.6 serve.py
